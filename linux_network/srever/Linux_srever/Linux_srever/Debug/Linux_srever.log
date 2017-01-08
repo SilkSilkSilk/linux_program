@@ -1,0 +1,30 @@
+﻿  VisualGDB: Sending 1 updated source file to build machine...
+  VisualGDB: Run "make CONFIG=Debug" in directory "/home/nzb/program_summary/linux_network/Develop/epoll/server" on nzb@115.159.100.211 (SSH)
+  g++ -std=c++11 -ggdb -ffunction-sections -O0   -DDEBUG=1  -c Linux_srever.cpp -o Debug/Linux_srever.o -MD -MF Debug/Linux_srever.dep
+D:\Program_summary\linux_program\linux_network\srever\Linux_srever\Linux_srever\Linux_srever.cpp(10,9): error : ‘vector’ does not name a type
+   typedef vector<int> clients;
+           ^
+  Linux_srever.cpp: In function ‘int main(int, char**)’:
+D:\Program_summary\linux_program\linux_network\srever\Linux_srever\Linux_srever\Linux_srever.cpp(15,2): error : ‘vector’ was not declared in this scope
+    vector
+    ^
+D:\Program_summary\linux_program\linux_network\srever\Linux_srever\Linux_srever\Linux_srever.cpp(16,2): error : expected ‘;’ before ‘pid_t’
+    pid_t pid;
+    ^
+D:\Program_summary\linux_program\linux_network\srever\Linux_srever\Linux_srever\Linux_srever.cpp(20,23): error : ‘pollfd_size’ was not declared in this scope
+    struct pollfd client[pollfd_size];
+                         ^
+D:\Program_summary\linux_program\linux_network\srever\Linux_srever\Linux_srever\Linux_srever.cpp(54,3): error : ‘client’ was not declared in this scope
+     client[i].fd = -1;                       //fd?0poll????????????
+     ^
+D:\Program_summary\linux_program\linux_network\srever\Linux_srever\Linux_srever\Linux_srever.cpp(56,2): error : ‘client’ was not declared in this scope
+    client[0].fd = listen_fd;
+    ^
+  make: *** [Debug/Linux_srever.o] Error 1
+  -------------------------------------------------------------
+  Command exited with code 2
+  Executable: make
+  Arguments: CONFIG=Debug
+  Directory: /home/nzb/program_summary/linux_network/Develop/epoll/server
+VisualGDB : error : Command-line action failed
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.MakeFile.Targets(41,5): error MSB3073: 命令“"D:\software\VisualGDB\\VisualGDB.exe" /build "D:\Program_summary\linux_program\linux_network\srever\Linux_srever\Linux_srever\Linux_srever.vcxproj" "/solution:D:\Program_summary\linux_program\linux_network\srever\Linux_srever\Linux_srever.sln" "/config:Debug" "/platform:Win32"”已退出，代码为 1。

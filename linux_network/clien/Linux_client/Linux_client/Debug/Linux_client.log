@@ -1,0 +1,4 @@
+﻿  VisualGDB: Sending 1 updated source file to build machine...
+  VisualGDB: Run "make CONFIG=Debug" in directory "/home/nzb/program_summary/linux_network/client" on nzb@115.159.100.211 (SSH)
+  g++ -std=c++11 -ggdb -ffunction-sections -O0   -DDEBUG=1  -c Linux_client.cpp -o Debug/Linux_client.o -MD -MF Debug/Linux_client.dep
+  g++ -o Debug/Linux_client -Wl,-gc-sections    -Wl,--start-group Debug/Linux_client.o -lunp  -Wl,--rpath='$ORIGIN'   -Wl,--end-group

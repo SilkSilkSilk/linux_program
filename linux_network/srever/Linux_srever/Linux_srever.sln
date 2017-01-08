@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Linux_srever", "Linux_srever\Linux_srever.vcxproj", "{9A5ADC90-B380-4FEA-A4C6-22D40E567F50}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Linux_client", "..\..\clien\Linux_client\Linux_client\Linux_client.vcxproj", "{4B6B3410-95A8-4D1E-8B0A-D723F3721E86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A5ADC90-B380-4FEA-A4C6-22D40E567F50}.Debug|x86.ActiveCfg = Debug|Win32
+		{9A5ADC90-B380-4FEA-A4C6-22D40E567F50}.Debug|x86.Build.0 = Debug|Win32
+		{9A5ADC90-B380-4FEA-A4C6-22D40E567F50}.Release|x86.ActiveCfg = Release|Win32
+		{9A5ADC90-B380-4FEA-A4C6-22D40E567F50}.Release|x86.Build.0 = Release|Win32
+		{4B6B3410-95A8-4D1E-8B0A-D723F3721E86}.Debug|x86.ActiveCfg = Debug|Win32
+		{4B6B3410-95A8-4D1E-8B0A-D723F3721E86}.Debug|x86.Build.0 = Debug|Win32
+		{4B6B3410-95A8-4D1E-8B0A-D723F3721E86}.Release|x86.ActiveCfg = Release|Win32
+		{4B6B3410-95A8-4D1E-8B0A-D723F3721E86}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
